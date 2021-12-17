@@ -2,21 +2,20 @@
 
 namespace One.Core.Models.Authentication
 {
-    public class AuthenticationResultBase<T>
+    public class AuthenticationResultBase
     {
+        public AuthenticationResultBase()
+        {
+        }
+
         public AuthenticationResultBase(AuthenticationFailureReason failureReason)
         {
             FailureReason = failureReason;
-            IsSuccess = false;
-        }
-
-        public AuthenticationResultBase(T user)
-        {
-            IsSuccess = true;
+            HasError = true;
         }
 
         public string Id { get; protected set; }
-        public bool IsSuccess { get; protected set; }
+        public bool HasError { get; protected set; }
         public string Role { get; protected set; }
         public string EmailId { get; protected set; }
         public string MobileNumber { get; protected set; }

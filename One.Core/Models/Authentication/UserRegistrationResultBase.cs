@@ -10,11 +10,11 @@ namespace One.Core.Models.Authentication
 
         public UserRegistrationResultBase(ValidationResult validationResult)
         {
-            HasErrors = true;
+            HasError = true;
             ValidationResult = validationResult;
         }
 
-        public bool HasErrors { get; private set; }
+        public bool HasError { get; private set; }
         public ValidationResult ValidationResult { get; private set; }
     }
 }
