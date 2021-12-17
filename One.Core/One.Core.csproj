@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+
+  <!--<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\References\Output\One.Infrastructure</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\References\Output\One.Infrastructure</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="One.Core">
+      <HintPath>..\..\References\One\One.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy $(OutDir)*.* $(OutDir)..\..\..\One /Y" />
+
+    <ItemGroup>
+      <FilesToDelete Include="$(OutDir)*.*"/>
+    </ItemGroup>
+
+    -->
+  <!--We are deleting "Output" directory after copying the files-->
+  <!--
+    <Delete Files="@(FilesToDelete)" />
+    <RemoveDir Directories="$(OutDir)..\" />
+  </Target>-->
+
+</Project>
