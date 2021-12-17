@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace One.Core.Authentication
+namespace One.Core.Models.Authentication
 {
     public class SuccessfulAuthenticationResponse
     {

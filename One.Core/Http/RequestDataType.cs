@@ -2,6 +2,6 @@
 {
     public class RequestDataType
     {
-        public const string Json = "application/atom+xml;type=entry";
+        public const string Json = "application/json; charset=utf-8";
     }
 }

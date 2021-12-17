@@ -2,6 +2,6 @@
 {
     public interface IHttpService
     {
-        public HttpResponse<TResponse> PostJson<TRequest, TResponse>(string url, TRequest data);
+        public HttpResponse<string> PostJson<TRequest, TResponse>(string url, TRequest data);
     }
 }

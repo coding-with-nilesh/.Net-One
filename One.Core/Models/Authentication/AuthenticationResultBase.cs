@@ -1,6 +1,6 @@
 ﻿using One.Core.Enums;
 
-namespace One.Core.Authentication
+namespace One.Core.Models.Authentication
 {
     public class AuthenticationResultBase<T>
     {

@@ -1,6 +1,6 @@
 ﻿using One.Core.Validation;
 
-namespace One.Core.Authentication
+namespace One.Core.Models.Authentication
 {
     public class UserRegistrationResultBase
     {
