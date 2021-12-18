@@ -2,13 +2,14 @@
 
 namespace One.Core.Models.Authentication
 {
-    public class UserRegistrationResultBase
+    public class UserRegistrationResult<TUser>
     {
-        public UserRegistrationResultBase()
+        public UserRegistrationResult(TUser user)
         {
+            User = user;
         }
 
-        public UserRegistrationResultBase(ValidationResult validationResult)
+        public UserRegistrationResult(ValidationResult validationResult)
         {
             HasError = true;
             ValidationResult = validationResult;
@@ -16,5 +17,6 @@ namespace One.Core.Models.Authentication
 
         public bool HasError { get; private set; }
         public ValidationResult ValidationResult { get; private set; }
+        public TUser User { get; private set; }
     }
 }
