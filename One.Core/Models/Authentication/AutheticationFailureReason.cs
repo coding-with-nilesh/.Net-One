@@ -1,4 +1,4 @@
-﻿namespace One.Core.Enums
+﻿namespace One.Core.Models.Authentication
 {
     public enum AuthenticationFailureReason
     {
@@ -8,5 +8,7 @@
         PasswordMismatch,
         UserIdOrPasswordIncorrect,
         BlockedAccount,
+        UnknownError,
+        TokenExpired
     }
 }
