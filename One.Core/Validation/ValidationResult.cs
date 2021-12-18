@@ -12,15 +12,17 @@ namespace One.Core.Validation
         {
         }
 
-        public ValidationResult(IEnumerable<ValidationError> errors, string message = null)
+        public ValidationResult(string error) : this(new List<ValidationError> { new ValidationError(null, null, error) })
         {
-            Message = message;
+        }
+
+        public ValidationResult(IEnumerable<ValidationError> errors)
+        {
             AddErrors(errors);
         }
         #endregion
 
         #region Properties
-        public string Message { get; }
         public IEnumerable<ValidationError> Errors
         {
             get
@@ -32,14 +34,14 @@ namespace One.Core.Validation
         #endregion
 
         #region Public methods
-        public void AddError(string field, string message)
+        public void AddError(string field, string error)
         {
-            AddError(new ValidationError(field, errorType: null, message));
+            AddError(new ValidationError(field, errorType: null, error));
         }
 
-        public void AddError(string field, ErrorType errorType, string message = null)
+        public void AddError(string field, string errorType, string error = null)
         {
-            AddError(new ValidationError(field, errorType, message));
+            AddError(new ValidationError(field, errorType, error));
         }
 
         public void AddError(ValidationError validationError)
