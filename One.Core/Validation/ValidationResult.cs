@@ -12,7 +12,11 @@ namespace One.Core.Validation
         {
         }
 
-        public ValidationResult(string error) : this(new List<ValidationError> { new ValidationError(null, null, error) })
+        public ValidationResult(string error) : this(null, error)
+        {
+        }
+
+        public ValidationResult(string errorType, string error) : this(new List<ValidationError> { new ValidationError(null, errorType, error) })
         {
         }
 

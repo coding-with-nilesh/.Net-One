@@ -7,5 +7,6 @@
         public const string Duplicate = "Duplicate";
         public const string DataTypeMismatch = "DataTypeMismatch";
         public const string OutOfRange = "OutOfRange";
+        public const string Unknown = "Unknown";
     }
 }
