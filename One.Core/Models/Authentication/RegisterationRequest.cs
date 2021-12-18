@@ -1,6 +1,6 @@
 ﻿namespace One.Core.Models.Authentication
 {
-    public class RegisterRequest
+    public class RegisterationRequest
     {
         public string EmailId { get; set; }
         public string Password { get; set; }

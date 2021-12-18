@@ -2,7 +2,7 @@
 
 namespace One.Core.Authentication
 {
-    public class RegisterRequestWithId: RegisterRequest
+    public class RegisterRequestWithId: RegisterationRequest
     {
         public string ApplicationId { get; set; }
     }
