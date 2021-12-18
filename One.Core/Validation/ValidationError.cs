@@ -2,6 +2,7 @@
 {
     public class ValidationError
     {
+        // Field can be null when you are doing validation for entity instead of the field
         public ValidationError(string field, ErrorType? errorType = null, string message = null)
         {
             Field = field;
