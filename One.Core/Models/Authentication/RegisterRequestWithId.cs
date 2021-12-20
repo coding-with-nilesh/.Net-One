@@ -1,8 +1,6 @@
-﻿using One.Core.Models.Authentication;
-
-namespace One.Core.Authentication
+﻿namespace One.Core.Models.Authentication
 {
-    public class RegisterRequestWithId: RegisterationRequest
+    public class RegisterationRequestWithId : RegisterationRequest
     {
         public string ApplicationId { get; set; }
     }
