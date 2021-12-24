@@ -7,11 +7,7 @@ namespace One.Core.Models.Email
         public string EmailType { get; set; }
         public IEnumerable<EmailAddress> Tos { get; set; }
         public EmailAddress From { get; set; }
-        public object TemplateData { get; set; }
-    }
-
-    public class EmailRequestWithId : EmailRequest
-    {
-        public string ApplicationId { get; set; }
+        public string Subject { get; set; }
+        public string Body { get; set; }
     }
 }
