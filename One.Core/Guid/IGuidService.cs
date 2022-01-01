@@ -4,5 +4,6 @@
     {
         string GetGuid();
         string GetShortGuid();
+        int GenerateCode(int length);
     }
 }

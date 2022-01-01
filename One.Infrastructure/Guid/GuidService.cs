@@ -14,5 +14,13 @@ namespace One.Infrastructure.Guid
             var ans = DateTime.Now.Ticks - ticks;
             return ans.ToString("x");
         }
+
+        public int GenerateCode(int length)
+        {
+            int min = (int)Math.Pow(10, length);
+            int max = (int)Math.Pow(10, length + 1) - 1;
+
+            return new Random().Next(min, max);
+        }
     }
 }
