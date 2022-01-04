@@ -10,5 +10,7 @@
         public const string BlockedAccount = "BlockedAccount";
         public const string UnknownError = "UnknownError";
         public const string TokenExpired = "TokenExpired";
+        public const string EmailIdNotVerified = "EmailIdNotVerified";
+        public const string EmailConfirmationCodeMismatch = "EmailConfirmationCodeMismatch";
     }
 }
