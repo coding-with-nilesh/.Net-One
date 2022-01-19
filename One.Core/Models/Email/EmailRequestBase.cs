@@ -2,11 +2,11 @@
 
 namespace One.Core.Models.Email
 {
-    public class EmailRequest
+    public class EmailRequestBase
     {
         public string EmailType { get; set; }
-        public IEnumerable<EmailAddress> Tos { get; set; }
-        public EmailAddress From { get; set; }
+        public IEnumerable<EmailAddressBase> Tos { get; set; }
+        public EmailAddressBase From { get; set; }
         public string Subject { get; set; }
         public string Body { get; set; }
     }

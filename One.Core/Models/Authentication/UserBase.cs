@@ -2,13 +2,6 @@
 
 namespace One.Core.Models.Authentication
 {
-    public enum UserStatus
-    {
-        Active,
-        PendingActive,
-        InActive
-    }
-
     public abstract class UserBase
     {
         public string Id { get; set; }
