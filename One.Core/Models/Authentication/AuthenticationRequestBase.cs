@@ -1,6 +1,6 @@
 ﻿namespace One.Core.Models.Authentication
 {
-    public class AuthenticationRequest
+    public class AuthenticationRequestBase
     {
         public string Password { get; set; }
         public string MobileNumber { get; set; }
