@@ -2,20 +2,20 @@
 
 namespace One.Core.Models.Authentication
 {
-    public class UserResult<TUser>
+    public class RequestResult<TResult>
     {
-        public UserResult(TUser user)
+        public RequestResult(TResult result)
         {
-            User = user;
+            Result = result;
         }
 
-        public UserResult(ValidationResult validationResult)
+        public RequestResult(ValidationResult validationResult)
         {
             HasError = true;
             ValidationResult = validationResult;
         }
 
-        public UserResult(ValidationResultForJson validationResult)
+        public RequestResult(ValidationResultForJson validationResult)
         {
             HasError = true;
             ValidationResult = new ValidationResult(validationResult.Errors);
@@ -23,6 +23,6 @@ namespace One.Core.Models.Authentication
 
         public bool HasError { get; private set; }
         public ValidationResult ValidationResult { get; private set; }
-        public TUser User { get; private set; }
+        public TResult Result { get; private set; }
     }
 }
